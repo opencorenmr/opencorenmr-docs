@@ -41,8 +41,8 @@ interface {
 ```
  - name = `current` should be arbitrary (optionally used for `ibfind` function).
  - Surprisingly, `pad=0` was necessary, even though the dip-switched primary address on the current controller was 4. And in the program coding, it was necessary to set pad to be 4. My guess is: the primary address **to be set on the operating system** is relevant to the GPIB-USB adapter (in our case, we are using a single adapter, so that the address is the youngest, i.e., zero), whereas on the software we are supposed to connect **to the device** (in our case, the magnet power supply whose address is set on the dip switch on the pear panel to be 4).
-  - After saving the `gpib.conf` file, I ran `sudo gpib_config`, which makes setup according to the above `gpib.conf` file.
-  - Found in `linux-gpib-4.1.0/lib/gpib_config`.
+ - After saving the `gpib.conf` file, I ran `sudo gpib_config`, which makes setup according to the above `gpib.conf` file.
+ - Found in `linux-gpib-4.1.0/lib/gpib_config`.
 
 ## Without sudo...
 Go to `/dev`, and `sudo chmod a+rw ./gpib0`.
