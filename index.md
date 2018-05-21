@@ -10,6 +10,6 @@ I will be trying to add information on:
 
 ---
 
-[GPIB on Linux](blog/gpibOnLinux.md)
-[2018 April](blog/2018Apr.md)
+- [GPIB on Linux](blog/gpibOnLinux.md)
+- [2018 April](blog/2018Apr.md)
 
