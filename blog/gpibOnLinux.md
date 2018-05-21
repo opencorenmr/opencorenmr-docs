@@ -23,21 +23,5 @@ We want to make remote control over the power supply for our cryogen-free superc
 - Next, we needed to edit `/etc/gpib.conf` as follows:
 
 ### gpib.conf
-```gpib.conf
-interface {
-        minor = 0       /* board index, minor = 0 uses /dev/gpib0, minor = 1 uses /dev/gpib1, etc. */
-        board_type = "ni_usb_b" /* type of interface board being used */
-        name = "current"        /* optional name, allows you to get a board descriptor using ibfind() */
-        pad = 0 /* primary address of interface             */
-        sad = 0 /* secondary address of interface           */
-        timeout = T10s  /* timeout for commands */
-        eos = 0xda      /* EOS Byte, 0xa is newline and 0xd is carriage return */
-        set-reos = yes  /* Terminate read if EOS */
-        set-bin = no    /* Compare EOS 8-bit */
-        set-xeos = no   /* Assert EOI whenever EOS byte is sent */
-        set-eot = no    /* Assert EOI with last byte on writes */
-        master = yes    /* interface board is system controller */
-}
-```
 
 ---
