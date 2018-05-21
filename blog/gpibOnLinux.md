@@ -47,6 +47,5 @@ interface {
 ## Without sudo...
 Go to `/dev`, and `sudo chmod a+rw ./gpib0`.
 
----
 
 [Back](../index.md)
