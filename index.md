@@ -8,5 +8,8 @@ I will be trying to add information on:
  - Pulse programming, and
  - Application examples.
 
-[Blog](blog/2018Apr.md)
+---
+
+[GPIB on Linux](blog/gpibOnLinux.md)
+[2018 April](blog/2018Apr.md)
 
