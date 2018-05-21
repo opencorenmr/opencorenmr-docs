@@ -13,3 +13,5 @@ We want to make remote control over the power supply for our cryogen-free superc
 
 ## Driver compilation (Cent OS)
 - `linux-gpib-4.1.0` was downloaded from [http://linux-gpib.sourceforge.net](http://linux-gpib.sourceforge.net) and extracted in an arbitrary working directory.
+- `./configure`
+- `make`
