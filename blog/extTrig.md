@@ -1,4 +1,5 @@
 # Waiting for external trigger
+(I do not remember the date in 2018) Kazuyuki Takeda
 
 To pause implementation of the pulse programmer until the spectrometer receives external trigger signal, use `exttrig` command.
 
