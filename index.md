@@ -9,7 +9,10 @@ I will be trying to add information on:
  - Application examples.
 
 ---
+# Release
+- [readme](release/readme.md)
 
+# Blog
 - [GPIB on Linux](blog/gpibOnLinux.md)
 - [2018 April](blog/2018Apr.md)
 
