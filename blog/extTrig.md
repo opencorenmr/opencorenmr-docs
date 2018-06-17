@@ -10,4 +10,4 @@ Init
 Relax
 ```
 
-[Back](../)
+[Back](../index.md)
