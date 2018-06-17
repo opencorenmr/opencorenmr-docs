@@ -18,5 +18,5 @@ I will be trying to add information on:
 # Blog
 - [GPIB on Linux](blog/gpibOnLinux.md)
 - [USB setup on Linux](blog/USBSetupOnLinux.md)
-- [2018 April](blog/2018Apr.md)
+- [External trigger](blog/extTrig.md)
 
