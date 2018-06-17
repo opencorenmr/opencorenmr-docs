@@ -9,8 +9,11 @@ I will be trying to add information on:
  - Application examples.
 
 ---
-# Release
-- [readme](release/readme.md)
+
+# Download binaries
+- [release notes](release/release.md)
+
+---
 
 # Blog
 - [GPIB on Linux](blog/gpibOnLinux.md)
