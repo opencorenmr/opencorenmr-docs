@@ -8,9 +8,9 @@
 - **Note this is an experimental release, and may soon be updated!**
 
 ### Download nmr-2.0.1-20180617 binaries
-- [Windows](nmr-2.0.1-20180617-win.zip)
-- [Mac](nmr-2.0.1-20180617-mac.dmg)
+- [Windows (nmr-2.0.1-20180617-win.zip)](nmr-2.0.1-20180617-win.zip)
+- [Mac (nmr-2.0.1-20180617-mac.dmg)](nmr-2.0.1-20180617-mac.dmg)
 - Linux: TODO (17 Jun 2018)
 
 ### Sources
-- [nmr-2.0.1](https://github.com/opencorenmr/console-devel-2.0.1)
+- [nmr-2.0.1 (https://github.com/opencorenmr/console-devel-2.0.1)](https://github.com/opencorenmr/console-devel-2.0.1)
