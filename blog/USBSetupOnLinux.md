@@ -21,3 +21,6 @@
  - In this example, (i.e., if you got `BUS 001`), go to `/dev/bus/usb/001`, and `sudo chmod a+w ./008`.
  - Then, you should be able to implement the opencore NMR software and establish connection with the spectrometer without root privilege.
  
+- - -
+
+[Back](../index.md)
