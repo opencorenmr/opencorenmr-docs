@@ -8,6 +8,6 @@
 - **Note this is an experimental release, and may soon be updated!**
 
 ### Platforms
-- Windows: nmr-2.0.1-20180617-win.zip
-- Mac: nmr-2.0.1-20180617-mac.dmg
+- [Windows](nmr-2.0.1-20180617-win.zip)
+- [Mac](nmr-2.0.1-20180617-mac.dmg)
 - Linux: TODO (17 Jun 2018)
