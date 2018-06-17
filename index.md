@@ -8,12 +8,12 @@ I will be trying to add information on:
  - Pulse programming, and
  - Application examples.
 
----
+- - -
 
 # Download binaries
 - [release notes](release/release.md)
 
----
+- - -
 
 # Blog
 - [GPIB on Linux](blog/gpibOnLinux.md)
