@@ -7,7 +7,7 @@
 - For experimental parameters, refer to ".opp" (**op**encore **p**arameter)
 - **Note this is an experimental release, and may soon be updated!**
 
-<img src="saveAsci.png" width=50%>
+<img src="./saveAsci.png" width=50%>
 
 ### Download nmr-2.0.1-20180617 binaries
 - [Windows (nmr-2.0.1-20180617-win.zip)](nmr-2.0.1-20180617-win.zip)
