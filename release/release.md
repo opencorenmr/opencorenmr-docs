@@ -2,11 +2,12 @@
 
 ## nmr-2.0.1-20180617
 ### What is new
-<img src="saveAsci.png" width=50%>
 - Save asci checkbox added in the experimental setting widget.
 - If this checkbox is checked, a file with ".opa" (**op**encore **a**sci) extension is created upon completion of data acquisition.
 - For experimental parameters, refer to ".opp" (**op**encore **p**arameter)
 - **Note this is an experimental release, and may soon be updated!**
+
+<img src="saveAsci.png" width=50%>
 
 ### Download nmr-2.0.1-20180617 binaries
 - [Windows (nmr-2.0.1-20180617-win.zip)](nmr-2.0.1-20180617-win.zip)
