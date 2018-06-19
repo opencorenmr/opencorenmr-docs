@@ -10,7 +10,7 @@
 
 ![saveAsci](saveAsci.png)
 
-### Download nmr-2.0.1-20180617 binaries
+### Download opencoreNMR-2.0.1-20180619 binaries
 - [Windows (opencoreNMR-2.0.1-20180619-win.zip)](opencoreNMR-2.0.1-20180619-win.zip)
 - TODO: Mac and Linux
 
