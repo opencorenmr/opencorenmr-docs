@@ -3,7 +3,6 @@
 
  - Let me explain the difference between _phase modulation_ and _phase cycling_.
  - For simplicity, suppose a sequence in which we apply a single pulse:
-
 ```
 pulse(pw; F1Amp(a), F1Phase(ph1), F1_Gate, F1_Unblank)
 ```
@@ -13,14 +12,12 @@ pulse(pw; F1Amp(a), F1Phase(ph1), F1_Gate, F1_Unblank)
  - That is, phase modulation is used to change the phase of rf pulses.
  - Conversely, the idea of _phase cycing_ is to make a shift, _in addition to_ phase modulation, to the rf phase according to the current count of sequence repetition.
  - To implement phase cycling with Opencore NMR, we need to declare `phaselist` in the preample:
-
 ```
 phaselist pl1=(ch1;x,y,-x,-y);
 ```
 
  - Here, we have defined, as an example, a phaselist `pl1` acting in channel 1 (ch1) with 4 items (x,y,-x,-y), which are equivalent to (0,90,180,270), respectively.
  - Then, we are able to use it in the pulse command as follows:
-
 ```
 pulse(pw; F1Amp(a), F1Phase(ph1), pl1, F1_Gate, F1_Unblank)
 ```
@@ -29,7 +26,6 @@ pulse(pw; F1Amp(a), F1Phase(ph1), pl1, F1_Gate, F1_Unblank)
   - When we come to the last item of the phaselist, the next time we will be starting with the first item.
 
   - It is allowed to specify the phaselist alone, i.e., without phase modulation, as follows:
-
 ```
 pulse(pw; F1Amp(a), pl1, F1_Gate, F1_Unblank)
 ```
