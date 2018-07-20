@@ -1,4 +1,4 @@
-# Phase Modulation and Phase Cycling with Opencore NMR
+# Phase Cycling with Opencore NMR
 20 July 2018 Kazuyuki Takeda
 
  - Let me explain the difference between _phase modulation_ and _phase cycling_.
