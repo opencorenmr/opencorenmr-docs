@@ -16,6 +16,7 @@ I will be trying to add information on:
 - - -
 
 # Blog
+- [Phase Cycling](blog/phaseCycle.md)
 - [LAPACK compilation](blog/lapack.md)
 - [GPIB on Linux](blog/gpibOnLinux.md)
 - [USB setup on Linux](blog/USBSetupOnLinux.md)
