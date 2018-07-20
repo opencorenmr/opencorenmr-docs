@@ -10,12 +10,8 @@
 
 ![saveAsci](saveAsci.png)
 
-### Download opencoreNMR-2.0.1-20180619 binaries
-- [Windows (opencoreNMR-2.0.1-20180619-win.zip)](opencoreNMR-2.0.1-20180619-win.zip)
-- TODO: Mac and Linux
-
-### Sources
-- [nmr-2.0.1 (https://github.com/opencorenmr/console-devel-2.0.1)](https://github.com/opencorenmr/console-devel-2.0.1)
+### Download opencoreNMR-2.0.1-20180629
+- [Download](https://github.com/opencorenmr/console-devel-2.0.1/releases/tag/untagged-feb29a00d422fdae0c13)
 
 - - -
 
