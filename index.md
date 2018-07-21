@@ -16,7 +16,7 @@ I will be trying to add information on:
 - - -
 
 # Blog
-- [On-line and Off-line Experimental Settings](blogs/onLineAndOffLineExpSettings/onLineAndOffLineExpSettings.md)
+- [On-line and Off-line Experimental Settings](blog/onLineAndOffLineExpSettings/onLineAndOffLineExpSettings.md)
 - [Phase Cycling](blog/phaseCycle.md)
 - [LAPACK compilation](blog/lapack.md)
 - [GPIB on Linux](blog/gpibOnLinux.md)
