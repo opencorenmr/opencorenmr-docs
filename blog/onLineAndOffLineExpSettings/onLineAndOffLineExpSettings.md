@@ -18,7 +18,7 @@ On the _Experimental settings_ panel of the Opencore NMR console software, we se
 
 ## Off-line experimental settings
  - In the off-line experimental settings, we can set up the conditions/parameters irrespective of whether the connection between the computer and the spectrometer is established.
- - Importantly, _even if your computer is connected_ to the spectrometers, the changes made in the off-line experimental settings ***will not be*** transferred to the spectrometer, unless you click the "Transfer" button. And note that the transfer button is disable during the experiment is actually running.
+ - Importantly, _even if your computer is connected_ to the spectrometers, the changes made in the off-line experimental settings ***will not be*** transferred to the spectrometer, unless you click the "Transfer" button. And note that the transfer button is disabled during the experiment is actually running.
  - What is great about the off-line experimental settings is that, even if the experiment is currently running, you can set up the parameters of the _next_ experiment.
  - In addition, you can set up and prepare experiments in advance to their implementation, even on computers that is not connected to the spectrometer.
  - All information set on the experimental settings panel will be stored in _a job file_, with a file extension of ".nmrjob".
