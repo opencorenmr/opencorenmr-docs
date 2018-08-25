@@ -16,9 +16,9 @@ I will be trying to add information on:
 - - -
 
 # Blog
+- [USB setup on Linux](blog/USBSetupOnLinux.md) (25 Aug 2018)
 - [On-line and Off-line Experimental Settings](blog/onLineAndOffLineExpSettings/onLineAndOffLineExpSettings.md)
 - [Phase Cycling](blog/phaseCycle.md)
 - [LAPACK compilation](blog/lapack.md)
 - [GPIB on Linux](blog/gpibOnLinux.md)
-- [USB setup on Linux](blog/USBSetupOnLinux.md)
 - [External trigger](blog/extTrig.md)
