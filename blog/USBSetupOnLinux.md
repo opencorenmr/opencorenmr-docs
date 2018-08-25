@@ -1,5 +1,5 @@
 # USB setup on Linux
-Updated on 25 Aug 2018 by Kazuyuki Takeda
+Updated on 25 Aug 2018 by Kazuyuki Takeda  
 Created on 26 Apr 2018 by Kazuyuki Takeda
 
 ### Installing FTDI D2XX Driver
