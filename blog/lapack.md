@@ -1,6 +1,6 @@
 # LAPACK
-28 Aug 2017 minor correction by Kazuyuki Takeda  
-20 July 2018 Kazuyuki Takeda
+28 Aug 2018 minor correction by Kazuyuki Takeda  
+20 Jul 2018 first version by Kazuyuki Takeda
 
 ## Introduction
 Recently, we implemented Singular Value Decomposition (SVD) for covariance NMR.
@@ -34,7 +34,7 @@ For Mac, we do not have to do anything as Xcode includes it, whereas for Windows
  - Click configure again, until items with red background disapper.
  - Click generate.
  - Using a terminal, like cmd, go into the build directory, and run `c:MinGW\bin\mingw32-make.exe`
- 
+
 - - -
 
 [Back](../index.md)
