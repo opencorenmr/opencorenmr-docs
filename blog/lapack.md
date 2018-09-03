@@ -1,5 +1,6 @@
 # LAPACK
-20 July 2018 Kazuyuki Takeda
+28 Aug 2018 minor correction by Kazuyuki Takeda  
+20 Jul 2018 first version by Kazuyuki Takeda
 
 ## Introduction
 Recently, we implemented Singular Value Decomposition (SVD) for covariance NMR.
@@ -18,10 +19,10 @@ For Mac, we do not have to do anything as Xcode includes it, whereas for Windows
  - In addition, we need to copy the header files as follows:
  - Go into `CBLAS/include` directory.
  - `sudo cp cblas.h /usr/local/include/`
- - `sudo cp cblas\_mangling.h /usr/local/include/`
- - Go into `LAPACK/include` directory.
+ - `sudo cp cblas_mangling.h /usr/local/include/`
+ - Go into `LAPACKE/include` directory.
  - `sudo cp lapacke.h /usr/local/include/`
- - `sudo cp lapacke\_mangling.h /usr/local/include/`
+ - `sudo cp lapacke_mangling.h /usr/local/include/`
 
 ## Windows
  - Instructions described [here](http://icl.cs.utk.edu/lapack-for-windows/lapack/#build) is so helpful!
@@ -29,11 +30,11 @@ For Mac, we do not have to do anything as Xcode includes it, whereas for Windows
  - Download and install CMAKE.
  - Download the lapack source.
  - Run CMAKE, specify the source and build path, and click configure.
- - Check options, such as `CMAKE\_GNUtoMS`, `CBLAS`, `LAPACKE`, `LAPACKE\_WITH\_TMG`.
+ - Check options, such as `CMAKE_GNUtoMS`, `CBLAS`, `LAPACKE`, `LAPACKE_WITH_TMG`.
  - Click configure again, until items with red background disapper.
  - Click generate.
  - Using a terminal, like cmd, go into the build directory, and run `c:MinGW\bin\mingw32-make.exe`
- 
+
 - - -
 
 [Back](../index.md)
