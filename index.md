@@ -16,6 +16,7 @@ I will be trying to add information on:
 - - -
 
 # Blog
+- [EPROM configuration on USB board](usb_eprom/mprog.md) (3 Sep 2018)
 - [LAPACK compilation](blog/lapack.md) (28 Aug 2018)
 - [USB setup on Linux](blog/USBSetupOnLinux.md) (25 Aug 2018)
 - [On-line and Off-line Experimental Settings](blog/onLineAndOffLineExpSettings/onLineAndOffLineExpSettings.md) (21 July 2018)
