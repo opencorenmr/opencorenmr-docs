@@ -1,7 +1,8 @@
 ---
 
 # GPIB setup on Linux
-21 May 2018 Kazuyuki Takeda
+12 Oct 2018 Revised by Kazuyuki Takeda  
+21 May 2018 Written by Kazuyuki Takeda
 
 ## Introduction
 We want to make remote control over the power supply for our cryogen-free superconducting magnet (SMS80C, Cryogenics) on the console software of Opencore NMR 2. I have attempted to program on Windows for a while, but never succeeded, and gave up. Now I decided to program on Linux.
@@ -46,6 +47,9 @@ interface {
 
 ## Without sudo...
 Go to `/dev`, and `sudo chmod a+rw ./gpib0`.
+
+## TODO
+To realize plug and play, udev needs to be configured to (i) change the mode of /dev/gpib0 to 0666, and (ii) implement gpib_config. I will try to work it out and update this page (12 Oct 2018).
 
 - - -
 
