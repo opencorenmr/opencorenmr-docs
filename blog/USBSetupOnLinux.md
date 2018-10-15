@@ -1,4 +1,5 @@
 # USB setup on Linux
+Minor correction on 15 Oct 2018 by Kazuyuki Takeda  
 Updated on 12 Oct 2018 by Kazuyuki Takeda  
 Updated on 25 Aug 2018 by Kazuyuki Takeda  
 Created on 26 Apr 2018 by Kazuyuki Takeda
@@ -28,7 +29,6 @@ Created on 26 Apr 2018 by Kazuyuki Takeda
  - The points are (i) mode 666 (read and write permission for all), and (ii) implementation of `rmmod ftdi_sio`.
  - Tell the change made to the computer by: `sudo /sbin/udevadm control --reload-rules`
  - Then, when the USB cable is plugged, you can have an access to the spectrometer.
- - Let us NOT forget to disable the default FTDI module by `sudo rmmod ftdi_sio`.
 
 ### (obsolete) Non-root access to FTDI USB devices on linux
  - Open a terminal.
