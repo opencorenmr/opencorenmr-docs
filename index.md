@@ -16,6 +16,7 @@ I will be trying to add information on:
 - - -
 
 # Blog
+- [Driver setup](blog/driverSetup/deiverSetup) (11 Jan 2019)  
 - [USB setup on Linux](blog/USBSetupOnLinux.md) (15 Oct 2018)  
 - [EPROM configuration on USB board](blog/usb_eprom/mprog.md) (3 Sep 2018)  
 - [LAPACK compilation](blog/lapack.md) (28 Aug 2018)  
