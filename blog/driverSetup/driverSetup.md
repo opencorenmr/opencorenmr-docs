@@ -39,4 +39,11 @@ every time you re-connect the USB cable. Whenever this operation is necessary, t
 ![](deviceManager_win.png)
 - If there is something wrong with the driver, you can download a [D2XX driver](https://www.ftdichip.com/Drivers/D2XX.htm) from FTDI.  
 
-s
+### Settings
+Clone `.opencorenmr` to the home directory of your computer:
+[https://github.com/opencorenmr/.opencorenmr.git](https://github.com/opencorenmr/.opencorenmr.git)
+
+That is,
+- Linux: ~/.opencorenmr, or /home/(username)/.opencorenmr  
+- Mac OSX: ~/.opencorenmr, or /Users/(username)/.opencorenmr  
+- Windows: C:\\Users\\(username)\\.opencorenmr  
