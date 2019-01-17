@@ -13,6 +13,7 @@ I will be trying to add information on:
 # Download binaries
 - [release notes](release/release.md)
 
+$ \int \pi $
 - - -
 
 # Blog
