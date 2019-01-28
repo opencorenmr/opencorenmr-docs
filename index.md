@@ -16,6 +16,8 @@ I will be trying to add information on:
 - - -
 
 # Blog
+- [Shaped pulses](blog/shapedPulse/shapedPulse.md) (28 Jan 2019)  
+- [Probe tuning](blog/probeTune/probeTune.md) (28 Jan 2019)  
 - [Driver setup](blog/driverSetup/driverSetup.md) (11 Jan 2019)  
 - [USB setup on Linux](blog/USBSetupOnLinux.md) (15 Oct 2018)  
 - [EPROM configuration on USB board](blog/usb_eprom/mprog.md) (3 Sep 2018)  
