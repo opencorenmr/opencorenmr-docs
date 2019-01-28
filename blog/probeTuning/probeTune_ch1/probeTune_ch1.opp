@@ -1,0 +1,16 @@
+point=1024
+dw=10
+sf1=74.656
+#
+
+[Log]
+actualNA=100
+
+[XAxis]
+isCustom=true
+metricPrefix=micro
+plotMetricPrefix=
+xAxisLabel=Frequency
+xAxisUnitSymbol=MHz
+xIncrement=0.0048828125
+xInitialValue=72.156

@@ -43,7 +43,14 @@ every time you re-connect the USB cable. Whenever this operation is necessary, t
 Clone `.opencorenmr` to the home directory of your computer:
 [https://github.com/opencorenmr/.opencorenmr.git](https://github.com/opencorenmr/.opencorenmr.git)
 
-That is,
+As a result, you will have .opencorenmr directory under your home directory:
 - Linux: ~/.opencorenmr, or /home/(username)/.opencorenmr  
 - Mac OSX: ~/.opencorenmr, or /Users/(username)/.opencorenmr  
 - Windows: C:\\Users\\(username)\\.opencorenmr  
+
+.opnecorenmr directory contains:
+
+- `gates` directory,
+- `examples` directory,
+
+as well as `*.ini` files. In `gates` there are *.gates file, which we call ***gate definition*** files. Descriptions on the gate definiton files will be presented elsewhere.
