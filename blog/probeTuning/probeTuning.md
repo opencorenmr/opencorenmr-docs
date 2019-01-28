@@ -1,20 +1,24 @@
 # Probe tuning using an Opencore NMR spectrometer
 
+28 Jan Kazuyuki Takeda
 - - -
 
 ## Introduction
 
-The purpose of NMR probe tuning is to establish impedance matching at the frequency of interest. Here, we show an example of probe tuning using an Opencore NMR spectrometer. Here, we assume you have already prepared (in addition to the spectrometer):  
+The purpose of NMR probe tuning is to establish impedance matching at the frequency of interest. A vector network analyzer is a very useful device for tuning the probe, it may not be available. Here, we show an example of probe tuning using an Opencore NMR spectrometer. Here, we assume you have already prepared (in addition to the spectrometer):  
 
 - a probe, or any other devices that you want to test.  
 - a coupler, or a power splitter. If you want to tune the probe by monitoring the reflection of the relatively strong, power-amplified rf signals, a coaxial line section with a pickup-port, like the ones shown below, can work.
-![](2b.png)
+![2b](2b.png)
+
+
+The idea is to generate an rf pulse *with its frequency swept over*, send it to the probe, and measure the signal reflected back from the probe. One may adjust the trimmer capacitors in such a way that the amplitude of the reflected signal becomes minimum at the frequency of interest.
 
 - - -
 
 ## Setup
 - Load an appropriate job for probe tuning.  
-![](3.png)
+![3](3.png)
 - In the *Variables* tab on the **Experimental Settings** window, you can see the center frequency and the span of the frequency over which you want to measure.  ![](4-5.png)
 - The main part of the pulse program looks like: ![](6.png)
 Here, the frequency at channel #1 (F1Freq) is swept by the `sweep` and `endSweep` commands. That is, during any commands sandwiched by `sweep` and `endSweep`, the frequency is swept. The start and stop frequencies are indicated by the two arguments of the sweep command. Detailed description of frequency sweeping will be described elsewhere.  
@@ -30,6 +34,107 @@ The variables declared in the current pulse program can be used. In this example
 
 ***Enjoy!***
 
+- - -
+
+probeTune_ch1.ppg
+```
+version=2.00;
+uses = defaultGates.gate;
+transform F1Freq=#+180;
+
+CLK=160;
+
+freq fCenter=74.656;
+freq fSpan=5;
+
+amp a=5;
+
+const int AD9858_2GHz_DISABLE=16472;
+
+aux PD=0.1s(Pulse delay);
+aux NA=100(Total scans);
+aux ND=4(Dummy scans);
+aux DW=10u(Dwell time);
+aux AL=1024(Acq. length);
+
+phaselist pl=(ch1; x,-x);
+acqphase=x,-x;
+
+// Any command before "start" should finish with a semicolon (;).
+
+start   //--- Implementation begins with a "start" command. ---
+
+  pulse(50n; F1FreqRST)
+  pulse(50n; F1Freq(setup; AD9858_2GHz_DISABLE))
+  delay(10m)
+  pulse(5000n; F1Freq(fCenter))
+  delay(1m)
+
+Init
+  pulse(1m;   RG)
+  sweep(F1Freq(fCenter-fSpan/2,fCenter+fSpan/2))
+  pulse(50n; ST, RG)
+  pulse(dw*al; F1Amp(a), pl, F1_Gate, F1_Unblank, RG)  
+  endSweep(F1Freq)
+  delay(10m)
+relax   
+
+```
+
+probuTune_ch1.nmrjob
+```
+[Acquisition]
+FFTCheckBox=false
+QDCheckBox=true
+digitalFilterCheckBox=true
+inFPGAAccumCheckBox=false
+inFPGAAccumSpinBox=1
+multipleAcquisitionCheckBox=false
+multipleAcquisitionComboBox=0
+multipleAcquisitionSpinBox=1
+offsetCorrectionCheckBox=false
+offsetCorrectionSpinBox=0
+phaseReverseCheckBox=false
+phaseRotationCheckBox=false
+phaseRotationSpinBox=0
+replaceRealWithAbsCheckBox=false
+separateDataStorageCheckBox=false
+separateDataStorageSpinBox=2
+
+[Array]
+arrayCheckBox=false
+arrayVariables=@Invalid()
+dimensions=0
+
+[File]
+commentTextEdit=
+nameLineEdit=probeTune_ch1
+numberOfImportedFiles=0
+obsFreqCheckBox=true
+obsFreqComboBox=0
+obsFreqLineEdit=74.656
+ppgFilename=probeTune_ch1.ppg
+
+[Variables]
+AL=1024
+DW=10
+NA=100
+ND=4
+PD=0.1
+a=5
+fCenter=74.656000000000006
+fSpan=5
+names=fCenter, fSpan, a, PD, NA, ND, DW, AL
+
+[xAxis]
+customAxisRadioButton=true
+defaultAxisRadioButton=false
+metricPrefixCombobox=10
+unitSymbolLineEdit=MHz
+xAxisLabelLineEdit=Frequency
+xIncrementLineEdit=fSpan/al
+xInitialValueLineEdit=fCenter-fSpan/2
+```
 
 <!---
 , resulting in the minimized reflection of the signal.
