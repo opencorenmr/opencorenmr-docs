@@ -1,3 +1,4 @@
+{% include head.html %}
 # Probe tuning using an Opencore NMR spectrometer
 
 28 Jan Kazuyuki Takeda
@@ -21,7 +22,15 @@ The idea is to generate an rf pulse *with its frequency swept over*, send it to 
 ![3](3.png)
 - In the *Variables* tab on the **Experimental Settings** window, you can see the center frequency and the span of the frequency over which you want to measure.  ![](4-5.png)
 - The main part of the pulse program looks like: ![](6.png)
-Here, the frequency at channel #1 (F1Freq) is swept by the `sweep` and `endSweep` commands. That is, during any commands sandwiched by `sweep` and `endSweep`, the frequency is swept. The start and stop frequencies are indicated by the two arguments of the sweep command. Detailed description of frequency sweeping will be described elsewhere.  
+Here, the frequency at channel #1 (F1Freq) is swept by the `sweep` and `endSweep` commands. That is, during any commands sandwiched by `sweep` and `endSweep`, the frequency is swept. The start and stop frequencies are indicated by the two arguments of the sweep command. Here, we use the center frequency $f_{\mathrm{center}}$ and the span $f_{\mathrm{span}}$, so that the start frequency $f_{\mathrm{start}}$ and the stop frequency $f_{\mathrm{stop}}$ are given by
+
+$$ f_{\mathrm{start}} = f_{\mathrm{center}} - \frac{1}{2} f_{\mathrm{span}}, $$
+
+and
+
+$$ f_{\mathrm{stop}} = f_{\mathrm{center}} + \frac{1}{2} f_{\mathrm{span}}. $$
+
+Detailed description of frequency sweeping will be described elsewhere.  
 
 - When you run, e.g., repeat scan, you get signal reflected back from your probe as a function of the frequency. An example of screenshots is shown below.![](7.png)
 - A little trick on customizing the format of the horizontal axis may be useful. By default, the x axis represents time. On *X Axis* tab of the **Experimental Settings** panel, you can change the format by selecting *customize x axis*, and edit the initial value, increment, and so on. ![](8.png)
@@ -135,6 +144,8 @@ xAxisLabelLineEdit=Frequency
 xIncrementLineEdit=fSpan/al
 xInitialValueLineEdit=fCenter-fSpan/2
 ```
+
+[Back to Top](../../index.md)
 
 <!---
 , resulting in the minimized reflection of the signal.
