@@ -19,8 +19,8 @@ I will be trying to add information on:
 
 # Blog
 - [Data files](blog/dataFiles/dataFiles.md) (29 Jan 2019)  
-- [Gate definitions](blog/gateDefinition/gateDefinition.md) (29 Jan 2019)  
-- [Kinds of gates](blog/kindOfGates/kindOfGates.md) (29 Jan 2019)  
+- [Gate definition](blog/gateDefinition/gateDefinition.md) (29 Jan 2019)  
+- [Kinds of gates](blog/kindsOfGates/kindsOfGates.md) (29 Jan 2019)  
 - [Shaped pulses](blog/shapedPulse/shapedPulse.md) (28 Jan 2019)  
 - [Probe tuning](blog/probeTune/probeTune.md) (28 Jan 2019)  
 - [Driver setup](blog/driverSetup/driverSetup.md) (11 Jan 2019)  
