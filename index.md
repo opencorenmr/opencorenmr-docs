@@ -1,3 +1,5 @@
+{% include head.html %}
+
 # Welcome to opencorenmr.github.io
 
 This site serves for a _complementary_ role to [Opencore NMR2](http://kuchem.kyoto-u.ac.jp/bun/indiv/takezo/opencorenmr2/index.html).
