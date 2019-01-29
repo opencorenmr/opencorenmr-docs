@@ -29,7 +29,6 @@ $$ f_{\mathrm{start}} = f_{\mathrm{center}} - \frac{1}{2} f_{\mathrm{span}}, $$
 and
 
 $$ f_{\mathrm{stop}} = f_{\mathrm{center}} + \frac{1}{2} f_{\mathrm{span}}. $$
-$$
 
 Detailed description of frequency sweeping will be described elsewhere.  
 
