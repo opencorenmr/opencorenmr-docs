@@ -26,3 +26,4 @@ I will be trying to add information on:
 - [Phase Cycling](blog/phaseCycle.md)  
 - [GPIB on Linux](blog/gpibOnLinux.md)  
 - [External trigger](blog/extTrig.md)  
+- math test $\pi \int \sum \alpha$
