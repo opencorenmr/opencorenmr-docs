@@ -16,7 +16,9 @@ pulse(width/n; …)  (‘#’ replaced by ‘2’)
 pulse(width/n; …)  (‘#’ replaced by ‘n-1’)
 ```
 
-- - -
+### Related Topics
+- [kinds of gates](../kindsOfGates/kindsOfGates.md).
+
 ### The principle of generating shaped pulses
 A shaped pulse has a waveform with an amplitude-modulated profile. In addition, you may want to modulate the phase of the pulse simultaneously. A straightforward way of programming a shaped pulse is to iterate pulse commands with intended  amplitudes and/or phases incremented in discrete steps, as shown in the following example:
 ```
@@ -76,6 +78,8 @@ For this purpose, `F1IQ` gate is extremely useful. The identical sinc pulse can 
 ```
 pulse[11](pw; F1IQ(a*sinc(#-5),0), <and any other gates that you want to activate> )
 ```
+
+The F1IQ gate is categorized into ***RFIQ gates***, which is described in [kinds of gates](../kindsOfGates/kindsOfGates.md).
 
 ### An arbitrary shaped pulse
 The shape that you want to program may not be represented by functions. You can set a numerical shape table, like:
