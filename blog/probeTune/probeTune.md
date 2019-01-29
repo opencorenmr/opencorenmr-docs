@@ -24,7 +24,7 @@ The idea is to generate an rf pulse *with its frequency swept over*, send it to 
 - The main part of the pulse program looks like: ![](6.png)
 Here, the frequency at channel #1 (F1Freq) is swept by the `sweep` and `endSweep` commands. That is, during any commands sandwiched by `sweep` and `endSweep`, the frequency is swept. The start and stop frequencies are indicated by the two arguments of the sweep command. Here, we use the center frequency $f_{\mathrm{center}}$ and the span $f_{\mathrm{span}}$, so that the start frequency $f_{\mathrm{start}}$ and the stop frequency $f_{\mathrm{stop}}$ are given by
 $$
-  f_{/mathrm{start}} = f_{\mathrm{center}} - \frac{1}{2} f_{\mathrm{span}},
+  f_{\mathrm{start}} = f_{\mathrm{center}} - \frac{1}{2} f_{\mathrm{span}},
 $$
 and
 $$
@@ -146,6 +146,8 @@ xAxisLabelLineEdit=Frequency
 xIncrementLineEdit=fSpan/al
 xInitialValueLineEdit=fCenter-fSpan/2
 ```
+
+[Back to Top](../../index.md)
 
 <!---
 , resulting in the minimized reflection of the signal.
