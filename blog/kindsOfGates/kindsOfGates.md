@@ -1,4 +1,5 @@
 # Kinds of gates
+30 Jan 2019 revised by KT
 29 Jan 2019 Kazuyuki Takeda
 - - -
 ### Related Topics
@@ -159,29 +160,45 @@ An example of applications of the RFIQ gate is found in a topic on [shaped pulse
 This is dedicated to control a direct digital synthesizer (DDS) board of the Opencore NMR spectrometer. It has a size of 40x40mm, and is equipped with a DDS chip AD9858 (Analog Devices). It is driven by a clock signal with a frequency of 1 GHz, and the frequency is controlled by the pulse programmer via a 0.5 mm pitch, 30 pin FPC cable. Roughly speaking, the maximum output frequency of a DDS is determined by ~0.4 times the clock frequency, which is ~400 MHz in the present case. But I have a feeling frequency generation up to ~420 MHz looks fine.
 ![](ad9858Board.png)
 
-The AD9858 chip has a 2-bit register called “profile”. On each of the four (22=4) profiles, AD9858 can store separate output frequency, and later on, you can choose which is used (using a 2-bit logic_vector gate for profile selection). This function may be used to switch frequency from one value to another very rapidly.
-In addition, AD9858 is capable of sweeping the frequency. I will describe how to do it later, but I must say that full control of this DDS board requires understanding the principle of its operation.
+The AD9858 chip has a 2-bit register called “profile”. On each of the four ($2^2=4$) profiles, AD9858 can store separate output frequency, and later on, you can choose which is used (using a 2-bit logic_vector gate for profile selection). This function may be used to switch frequency from one value to another very rapidly. In addition, AD9858 is capable of sweeping the frequency. I will describe how to do it later.
+<!--
+but I must say that full control of this DDS board requires understanding the principle of its operation.
+-->
 
-In the definition of the AD9858 gate, `bitlength` must be 16.
+In the definition of the AD9858 gate, let us say F1Freq, `bitlength` must be 16.
 ```
-[AD9858Word]
+[F1Freq]
 channel = ...
 bitlength = 16
 kind = AD9858
-AD9858Word_0 = ...
-AD9858Word_1 = ...
+F1Freq_0 = ...
+F1Freq_1 = ...
 ...
-AD9858Word_15 = ...
+F1Freq_15 = ...
 ```
 And the usage of this gate is
 ```
-pulse(time; AD9858Word(profile; value))
+pulse(time; F1Freq(profile; value))
 ```
 or
 ```
-pulse(time; AD9858Word(value))
+pulse(time; F1Freq(value))
 ```
-In the former case, profile should be 0, 1, 2, or 3. In the latter case, profile=0 is assumed. That is, the latter, `pulse(time; AD9858Word(value))`, is equivalent to `pulse(time; AD9858Word(0; value))`.
+In the former case, profile should be 0, 1, 2, or 3. In the latter case, profile=0 is assumed. That is, the latter,
+```
+pulse(time; F1Freq(value))
+```
+, is equivalent to
+```
+pulse(time; F1Freq(0; value))
+```
+
+##### Other "profile" options
+This is extensions that I defined for pulse programming in Opencore NMR (i.e., no such description is found in the datasheet of AD9858). In most cases users do not have to take care of them.
+- F1Freq(-1; value)  
+This is used for delta-frequency tuning word.
+- F1Freq(setup; value)
+When we use a word "setup", instead of 0, 1, 2, 3, or -1, the AD9858 gate is interpreted as a logic_vector gate.
 
 ##### Offset Frequency
 We may want to make an offset in the output frequency. That is, we may need to set the actual frequency to be
@@ -245,7 +262,7 @@ pulse(time; ...)
 pulse(time; AD9858Word(value2))
 ...
 ```
-In the above example, the frequency at value1 set in the 1st line is kept until the 4th line, where another frequency value2 is set. This way of switching frequency is straightforward, but takes a time interval of the order of a hundred nanoseconds. Compared to this, frequency switching by profile selection is very fast.
+In the above example, the frequency at `value1` set in the 1st line is kept until the 4th line, where another frequency `value2` is set. This way of switching frequency is straightforward, but takes a time interval of the order of a hundred nanoseconds. Compared to this, frequency switching by profile selection is very fast.
 
 Frequency sweep, which I believe to be another topic of great interest, will be described elsewhere.
 

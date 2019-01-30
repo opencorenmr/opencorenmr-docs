@@ -3,6 +3,9 @@
 
 28 Jan Kazuyuki Takeda
 - - -
+## Related Topics
+- [Frequency control](../dds2/dds2.md)  
+
 
 ## Introduction
 
