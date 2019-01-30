@@ -10,7 +10,7 @@ Here I discuss the format of the data acquired with Opencore NMR 2.
 At the time of writing this topic, files with the following extensions are created:
 ![](table1.png)
 
-<!--
+
 extension  | description  | notes
 --|---|--
 .opd  | double-precision data (binary)  | little endian
@@ -18,7 +18,7 @@ extension  | description  | notes
 .sm2d  | single-precision data (binary)  | little endian
 .sm2p  | parameters associated with .sm2p (text)  |  
 .opa  | ascii data | optional |
--->
+
 
 
 ### Double-precision data (.opd and .opp)
