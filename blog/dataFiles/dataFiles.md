@@ -31,7 +31,7 @@ actualNA=100
 ```
 - Most important parameters in the `.opp` file is `point`, which carries the number of points, or often called the aquisition length (al), of a single FID data.  
 - In the .opd file, the data are saved in **double-precision** and **little-endian byte-order** the following way:
-```c++
+```cpp
 QDataStream out(&file);
 out.setFloatingPointPrecision(QDataStream::DoublePrecision);
 out.setByteOrder(QDataStream::LittleEndian);
