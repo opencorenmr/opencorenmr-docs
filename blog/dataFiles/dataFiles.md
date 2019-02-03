@@ -70,7 +70,7 @@ file.close();
 
 
 ### .opa
-- Named after **op**encore **a**scii format.
+- Named after **op**encore **a**scii format.  
 - This is an optional file format in which the text data are saved to a file.
 - This option is activated when you check the save ascii checkbox.
 ![](saveAscii.png)
