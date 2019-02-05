@@ -31,7 +31,7 @@ actualNA=100
 ```
 - Most important parameters in the `.opp` file is `point`, which carries the number of points, or often called the aquisition length (al), of a single FID data.  
 - In the .opd file, the data are saved in **double-precision** and **little-endian byte-order** the following way:
-```cpp
+```
 QDataStream out(&file);
 out.setFloatingPointPrecision(QDataStream::DoublePrecision);
 out.setByteOrder(QDataStream::LittleEndian);
@@ -56,7 +56,7 @@ file.close();
 ### Single-precision data (.sm2d and .sm2p)
 - The format is almost identical to the double-precision data (.opd and .opp) described above. The only difference is that the binary data is stored with *single precision*. The byte order is the same, i.e., little endian. For a single (i.e., non-arrayed) data, the points are stored in the following way:
 
-```c++
+```
 QDataStream out(&file);
 out.setFloatingPointPrecision(QDataStream::SinglePrecision);
 out.setByteOrder(QDataStream::LittleEndian);
@@ -76,7 +76,7 @@ file.close();
 ![](saveAscii.png)
 - Shown below is a cropped code for creating the `.opa`  file for arrayed data, whence I hope you can tell that in-phase and quadrature data of each point are written in a single line separated by a whitespace, and then line feed follows and the next point is processed. As this is a text file, I hope you can verify the format using a text editor.
 
-```c++
+```
 QFile file(fn);
 if (!file.open(flag | QIODevice::Text))
 {
