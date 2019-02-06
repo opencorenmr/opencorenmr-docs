@@ -20,6 +20,7 @@ extension  | description  | notes
 ### Double-precision data (.opd and .opp)
 - The extensions `opp` and `opd` were named after **op**encore **d**ata and **op**encore **p**arameter.
 - A `.opp` file is a text file and can be viewed (and even edited at your own responsibility) with a text editor. The content looks like:
+
 ```
 point=1024
 dw=10
@@ -29,8 +30,10 @@ sf1=74.656
 actualNA=100
 ...
 ```
+
 - Most important parameters in the `.opp` file is `point`, which carries the number of points, or often called the aquisition length (al), of a single FID data.  
 - In the .opd file, the data are saved in **double-precision** and **little-endian byte-order** the following way:
+
 ```
 QDataStream out(&file);
 out.setFloatingPointPrecision(QDataStream::DoublePrecision);
@@ -40,6 +43,7 @@ for(int m=0; m<al(); m++) out << real->sig.at(m) << imag->sig.at(m);
 
 file.close();
 ```
+
 - Here, `al()` stands for the number of points, `real->sig.at(m)` is the in-phase (or real) part of the m-th point, `imag->sig.at(m)` is the quadrature (or imaginary) part of the m-th point.
 - That is, the in-phase and quadrature parts of the complex data are stored *one after another*, starting from the first (0-th) to the last points.
 - If you perform an array experiment and store the data, the arrayed data will be ***appended*** to the identical `.opd` file.
@@ -66,6 +70,7 @@ for(int m=0; m<al(); m++) out << (float) real->sig.at(m)
 
 file.close();
 ```
+
 - Again, if you perform an array experiment and store the data, the arrayed data will be ***appended*** to the identical `.sm2d` file.
 
 
@@ -99,6 +104,7 @@ for(int i=0; i<FID.size(); i++)
 } // i
 file.close();
 ```
+
 - Note that the size of the file can be very big when you try to store data with a long array.
 
 
