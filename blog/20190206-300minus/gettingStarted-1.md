@@ -11,3 +11,12 @@ We assume that you alrerady have a system that works. That is, we assume that yo
 - Amplitude of the rf pulse and its optimal duration
 
 ##### Adjustment of the magic angle
+
+### A single-pulse <sup>1</sup>H experiment in adamantane
+
+- The power of radiofrequency pulses was too low. Recently, we found one power amplifier was out of order, and replaced it by another one. It seems we need more input power for the replaced one.
+
+
+
+
+
