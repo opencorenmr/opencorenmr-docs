@@ -1,7 +1,19 @@
 # Linearity correction
 
+
+### Preparation
+
+- In this example, we are interested in compensating the non-linear behavior on channel #3.  
+- Here, we generte a sawtooth pulse and send it to a power amplifier.  
+- We pick up a tiny fraction of the signal transmitted out of the power amplifier toward the probe using a coupler, and feed the pick-up signal to the input port of the receiver.  
+- During application of the pulse, we carry out data sampling.  
+- Of course, we need to be careful not to feed too much power into the receiver. We usually use a 50 dB directional coupler, so that only 1/100000 of the transmitting power comes into the receiver.  
+- In addition, we need to make sure that the signal being monitored does not saturate any parts of the receiving modules; you may need to insert an attenuator somewhere.  
+
+
+
 ### Data acquisition
-- In this example, we are interested in compensating the non-linear behavior on channel #3.
+
 - The following pulse program is used.  
 
 ```
@@ -40,16 +52,24 @@ Init
 relax   
 ```
 
-- Here, we generte a sawtooth pulse. At the beginning of the pulse its amplitude is zero, while at the end of the pulse the amplitude is almost the maximum (99).  We change the amplitude of the pulse linearly with 100 steps.  
+- Here, we generte a sawtooth pulse. At the beginning of the pulse its amplitude is zero, while at the end of the pulse the amplitude is almost the maximum (99).  
+- We pick up a tiny fraction of the signal transmitted out of the power amplifier toward the probe using a coupler, and feed the pick-up signal to the input port of the receiver.  
+- During application of the pulse, we carry out data sampling with 100 points.  
+
+- Of course, we need to be careful not to feed too much power into the receiver. We usually use a 50 dB directional coupler, so that only 1/100000 of the transmitting power comes into the receiver.  
+- In addition, we need to make sure that the signal being monitored does not saturate any parts of the receiving modules; you may need to insert an attenuator somewhere.  
 
 ```
   pulse[al](dw*al; F3Amp(a*#/al), pList, F3_Gate, F3_Unblank, RG)
 ```
 
-- The signal trnsmitted out of the power amplifier toward the probe is picked up using a coupler, and connected to the input port of the receiver.  
-- During application of the pulse, we carry out data sampling with 100 points.  
-- Of course, we need to be careful not to feed too much power into the receiver. We usually use a 50 dB directional coupler, so that only 1/100000 of the transmitting power comes into the receiver.  
-- In addition, we need to make sure that the signal being monitored does not saturate any parts of the receiving modules; you may need to insert an attenuator somewhere.  
+- Note that `al=100`, so that the amplitude of the pulse changes linearly with 100 steps.  
+
+```
+  pulse(50n;                          F3_Unblank, RG, ST, F1TTL1)
+  pulse[al](dw*al; F3Amp(a*#/al), pList, F3_Gate, F3_Unblank, RG)
+```
+- Here, just before the pulse, `ST` (*S*ampling *T*rigger) is activated, so that the receiver starts acquiring the data with a sampling interval `dw` for `al` (=100) points. Note that the length of the following sawtooth pulse is `dw*al`.  
 
 
 ### Data process
