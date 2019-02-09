@@ -1,0 +1,16 @@
+point=4096
+dw=5
+sf1=75.0469
+#
+
+[Log]
+actualNA=100
+
+[XAxis]
+isCustom=false
+xInitialValue=0
+xIncrement=4.9999999999999996e-6
+xAxisLabel=
+xAxisUnitSymbol=sec
+metricPrefix=micro
+plotMetricPrefix=milli

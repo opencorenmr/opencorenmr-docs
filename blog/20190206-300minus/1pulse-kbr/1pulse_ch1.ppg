@@ -1,0 +1,63 @@
+// 
+version=2.0;
+
+uses = defaultGates.gate;
+// defaultGates.gate is located in the "gates" folder in the application directory.
+
+transform F1Freq=#+180;
+// DDS(II) signal is to be down-converted with an intermediate frequency of 180 MHz.
+// Accordingly, we want it generating the frequency 180 MHz above the carrier freq.
+transform F1Amp=2.585 
+               +2.04524*#
+	-0.0522161*#*#
+	+0.00106271*pow(#,3)
+	-1.01001e-005*pow(#,4)
+	+3.62161e-008*pow(#,5);
+
+CLK=160;  // PPG Clock frequency 
+
+freq f1=75.0469; 
+freq f1Offset_kHz=0; 
+
+amp a=60; 
+
+time pw1=5u; 
+time rd=10u(receiver delay); 
+time ad=10u(acquisition delay); 
+
+const int AD9858_2GHZ_DISABLE=16472; 
+// This is not going to be altered, and thus is declared with "const",
+// so that it does not appear in the variable edit table.
+
+//-----  aux parameters  -----
+aux PD=0.1s(Pulse Delay); 
+aux NA=100(Number of Accum); 
+aux DW=5u(DWell time); 
+aux AL=4096(Acquisition Length); 
+aux ND=0(Number of Dummy scans); 
+
+//----- phase cycle  -----
+phaselist pList=(ch1; x,y,-x,-y);
+acqphase=x,y,-x,-y;
+
+// Any command before "start" should finish with a semicolon (;).
+start   
+// Implementation begins with a "start" command.
+// Commands between "start" and "init" is implemented ONCE for each run.
+
+  pulse(50n; F1FreqRST)
+//  AD9858 (DDS chip) initialization
+  pulse(50n; F1Freq(setup;AD9858_2GHz_DISABLE))
+//  We use a 1 GHz clock, and disable 2 GHz divider, 
+
+  delay(1m)
+  pulse(5000n; F1Freq(f1+0.001*f1Offset_kHz))
+  delay(1m)
+
+Init // Commeands between "Init" and "Relax" are repeated NA(+ND) times.  
+  pulse(10u;                           F1_Unblank)
+  pulse(pw1; F1Amp(a), pList, F1_Gate, F1_Unblank)
+  pulse(rd)
+  pulse(ad; RG)
+  pulse(dw*al;  ST, RG)
+relax   
