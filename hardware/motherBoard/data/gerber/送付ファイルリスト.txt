@@ -1,0 +1,11 @@
+mother-002.cmp(部品面パターンデータ)
+mother-002.plc（部品面シルクデータ）
+mother-002.sol（半田面パターンデータ）
+mother-002.stc（部品面レジストデータ）
+mother-002.sts（半田面レジストデータ）
+mother-002.pls（半田面シルクデータ）
+mother-002.2l（2層パターンデータ）
+mother-002.3l（3層パターンデータ）
+mother-002.out（外形線データ）
+mother-002.dri(ドリルリスト）
+mother-002.drd（ドリルデータ） 
