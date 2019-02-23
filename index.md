@@ -12,8 +12,15 @@ I will be trying to add information on:
 
 - - -
 
-# Download binaries
+# Software
 - [release notes](release/release.md)
+
+- - -
+
+# Hardware
+
+- [Mother board](hardware/motherBoard/motherBoard.md)   
+
 
 - - -
 
