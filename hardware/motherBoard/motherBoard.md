@@ -59,10 +59,6 @@ The photo just below shows the *docked* board:
 ### Parts List
 
 
-
-Partlist exported from d:/take/NMR/boardDesigns/projects/NMR-MOTHER/MOTHER-002/mother-002.sch at 2008/10/14 21:02:26
-
-
 Part  | Value  | Device  | Package  | Description
 --|---|---|---|--
 C1   |  0.1u           |  C1005            | 1005           |    
