@@ -20,6 +20,8 @@ I will be trying to add information on:
 # Hardware
 
 - [Mother board](hardware/motherBoard/motherBoard.md)   
+- [DDS2](hardware/DDS2/DDS2.md)  
+
 
 
 - - -

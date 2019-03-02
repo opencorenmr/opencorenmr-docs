@@ -266,4 +266,33 @@ U8   |       |  AD9740ACPZ       | 32-Lead LFCSP_VQ  | Analog Devices
 
 
 - - -
+<table>
+<tr><td><b>Qty</b></td><td><b>Value</b></td><td><b>Device</b></td><td><b>Parts</b></td></tr>
+<tr><td>8</td><td>0.01u</td><td>C (1608)</td><td>C32, C33, C36, C37, C40, C41, C44, C45</td></tr>
+<tr><td>45</td><td>0.1u</td><td>C (1005)</td><td>C1, C4, C7, C8, C10, C11, C16, C17, C18, C19, C22, C25, C26, C28, C29, C46, C49, C52, C53, C55, C56, C57, C60, C63, C64, C66, C67, C68, C71, C74, C75, C77, C78, C79, C82, C85, C86, C88, C89, C90, C93, C96, C97, C99, C100</td></tr>
+<tr><td>1</td><td>0.1uF</td><td>C (1005)</td><td>C14</td></tr>
+<tr><td>1</td><td>1k</td><td>R (1005)</td><td>R4</td></tr>
+<tr><td>8</td><td>2k</td><td>R (1005)</td><td>R1, R5, R6, R7, R8, R11, R14, R17</td></tr>
+<tr><td>2</td><td>10uF</td><td>C (polar, 3216)</td><td>C13, C15</td></tr>
+<tr><td>1</td><td>20p</td><td>C (1005)</td><td>C12</td></tr>
+<tr><td>2</td><td>33</td><td>R (1005)</td><td>R2, R3</td></tr>
+<tr><td>8</td><td>33u</td><td>C (polar, 3216)</td><td>C30, C31, C34, C35, C38, C39, C42, C43</td></tr>
+<tr><td>14</td><td>33u</td><td>C (polar, 3216)</td><td>C3, C6, C21, C24, C48, C51, C59, C62, C70, C73, C81, C84, C92, C95</td></tr>
+<tr><td>4</td><td>50</td><td>R (1005)</td><td>R9, R12, R15, R18</td></tr>
+<tr><td>4</td><td>100</td><td>R (1005)</td><td>R10, R13, R16, R19</td></tr>
+<tr><td>21</td><td>1000p</td><td>C (1005)</td><td>C2, C5, C9, C20, C23, C27, C47, C50, C54, C58, C61, C65, C69, C72, C76, C80, C83, C87, C91, C94, C98</td></tr>
+<tr><td>1</td><td></td><td>AD9245BCPZ-80 (Analog Devices)</td><td>U7</td></tr>
+<tr><td>7</td><td></td><td>AD9740ACPZ (Analog Devices)</td><td>U1, U2, U3, U4, U5, U6, U8</td></tr>
+<tr><td>2</td><td></td><td>DF13-2P-1.25V (HIROSE)</td><td>CN19, CN20</td></tr>
+<tr><td>46</td><td></td><td>FERRITE BEAD</td><td>FB1, FB2, FB3, FB4, FB5, FB6, FB7, FB8, FB9, FB10, FB11, FB12, FB13, FB14, FB15, FB16, FB17, FB18, FB19, FB20, FB21, FB22, FB23, FB24, FB25, FB26, FB27, FB28, FB29, FB30, FB31, FB32, FB33, FB34, FB35, FB36, FB37, FB38, FB39, FB40, FB41, FB42, FB43, FB44, FB45, FB46</td></tr>
+<tr><td>5</td><td></td><td>FH12-30S-0.5SH (HIROSE)</td><td>CN5, CN6, CN7, CN16, CN17</td></tr>
+<tr><td>2</td><td></td><td>FX10A-80S/8-SV (HIROSE)</td><td>CN1, CN2</td></tr>
+<tr><td>2</td><td></td><td>FX10A-100S/10-SV (HIROSE)</td><td>CN3, CN4</td></tr>
+<tr><td>1</td><td></td><td>SMA STRAIGHT</td><td>CN18</td></tr>
+<tr><td>4</td><td></td><td>TC1-1T+ (Mini-Circuits)</td><td>T1, T2, T3, T4</td></tr>
+<tr><td>9</td><td></td><td>U.FL-R-SMT (HIROSE)</td><td>CN8, CN9, CN10, CN11, CN12, CN13, CN14, CN15, CN21</td></tr>
+</table>
+
+
+- - -
 [Back to Home](../../index.md)  
