@@ -1,11 +1,9 @@
-# Mother board
+# DDS2
 
 2 Mar 2019 Kazuyuki Takeda
 
 [Back to Home](../../index.md)  
 - - -
-
-![](b01.jpg)
 
 This board serves for a direct digital synthesizer (DDS). Each rf channel of the Opencore NMR spectrometer is equipped with two separate DDS. The first DDS is implemented on the [mother board](../motherBoard/motherMoard.md). Here, we described the *second* one, which we call DDS2.
 ![](DDS2Board.png)
