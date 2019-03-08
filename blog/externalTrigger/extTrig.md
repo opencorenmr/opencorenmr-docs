@@ -1,7 +1,6 @@
 # Waiting for external trigger
 
-8 Mar 2019 Revised by Kazuyuki Takeda
-(I do not remember the date in 2018) Kazuyuki Takeda
+8 Mar 2019 Revised by Kazuyuki Takeda  
 
 - - -
 
