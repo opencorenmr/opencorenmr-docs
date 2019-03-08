@@ -47,44 +47,33 @@ Also, the [D2XX driver](https://www.ftdichip.com/Drivers/D2XX.htm), which is ava
 
 
 
- <br>
- <table width="80%" align="center">
-  <tr><td><b>Part</b></td><td><b>Value</b></td><td><b>Device</b></td><td><b>Package</b></td><td><b>Description</b></td></tr>
-  <tr><td>C1</td><td>*27p</td><td>C</td><td>1608</td><td></td></tr>
-  <tr><td>C2</td><td>*27p</td><td>C</td><td>1608</td><td></td></tr>
-  <tr><td>C3</td><td>33nF</td><td>C</td><td>3216</td><td></td></tr>
-  <tr><td>C4</td><td>0.1u</td><td>C</td><td>1608</td><td></td></tr>
-  <tr><td>C5</td><td>0.1u</td><td>C</td><td>1608</td><td></td></tr>
-  <tr><td>C6</td><td>0.1u</td><td>C</td><td>1608</td><td></td></tr>
-  <tr><td>C7</td><td>10u</td><td>C</td><td>3216 (polar)</td><td>tantalum </td></tr>
-  <tr><td>CN1</td><td></td><td>FH12-30S-0.5SH (HIROSE)</td><td></td><td>0.5 mm pitch FPC connector</td></tr>
-  <tr><td>FB</td><td></td><td>FERRITE BEAD</td><td>3216</td><td></td></tr>
-  <tr><td>R1</td><td>27</td><td>R</td><td>1608</td><td></td></tr>
-  <tr><td>R2</td><td>27</td><td>R</td><td>1608</td><td></td></tr>
-  <tr><td>R3</td><td>1.5k</td><td>R</td><td>1608</td><td></td></tr>
-  <tr><td>R4</td><td>470</td><td>R</td><td>1608</td><td></td></tr>
-  <tr><td>R5</td><td>2.2k</td><td>R</td><td>1608</td><td></td></tr>
-  <tr><td>R6</td><td>10k</td><td>R</td><td>1608</td><td></td></tr>
-  <tr><td>U1</td><td></td><td>FT2232D (FTDI)</td><td></td><td>Dual USB UART/FIFO I.C.</td></tr>
-  <tr><td>U2</td><td></td><td>67068-704J (MOLEX)</td><td></td><td>USB connector</td></tr>
-  <tr><td>U3</td><td></td><td>AT93C46-10TU-2.7 (ATMEL)</td><td></td><td>Serial EPROM</td></tr>
-  <tr><td>U4</td><td></td><td>LM2937IMP-3.3</td><td>SOT-223</td><td>Voltage regulator</td></tr>
-  <tr><td>Y1</td><td>6 MHz</td><td>HC49/4H SMX</td><td></td><td>6 MHz crystal</td></tr>
-</table>
+Part  | Value  | Device  | Package  | Description
+--|---|---|---|--
+C1	| *27p | 	C |	1608 |
+C2	| *27p | 	C |	1608 |
+C3	| 33nF | 	C |	3216 |
+C4	| 0.1u | 	C |	1608 |
+C5	| 0.1u | 	C |	1608 |
+C6	| 0.1u | 	C |	1608 |
+C7	| 10u  | 	C |	3216 (polar) | tantalum
+CN1	|  | FH12-30S-0.5SH 	| | 	0.5 mm pitch FPC connector (HIROSE)
+FB  |  30 Ohm @ 100 MHz   |  MPZ1608S300A   | 1608           | Ferrite bead (TDK)
+R1	| 27	  | R	| 1608	|
+R2	| 27	  | R	| 1608	|
+R3	| 1.5k	| R	| 1608	|
+R4	| 470	  | R	| 1608	|
+R5	| 2.2k	| R	| 1608	|
+R6	| 10k	  | R	| 1608	|
+U1	|  | FT2232D	|	| Dual USB UART/FIFO I.C. (FTDI)
+U2	|  | 67068-704J  |	|	USB connector (MOLEX)
+U3	|  | **AT93C46-10TU-2.7	|  Thin Shrink Small Outline Package (TSSOP) |	Serial EPROM (ATMEL)
+U4	|  | LM2937IMP-3.3	| SOT-223	| Voltage regulator
+Y1	| 6 MHz	| HC49/4H SMX	| |	6 MHz crystal
+
 *Note: The proper value for C1 and C2 depends on the crystal oscillator. Check the datasheet of the 6 MHz crystal that you use.
 
 
-
- </font>
-
-
-
-
-
-
-  </li>
-<br>
-</ul>
+**Note: End of production. There should be alternatives. According to the datasheet of FT2232D, EEPROMs with a 16-bit wide configuration are required. And the EEPROM must be operational at a 1 MHz clock rate with a supply voltage between 4.35V and 5.25V.
 
 
 - - -

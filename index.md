@@ -41,4 +41,4 @@ I will be trying to add information on:
 - [On-line and Off-line Experimental Settings](blog/onLineAndOffLineExpSettings/onLineAndOffLineExpSettings.md) (21 July 2018)  
 - [Phase Cycling](blog/phaseCycle.md)  
 - [GPIB on Linux](blog/gpibOnLinux.md)  
-- [External trigger](blog/extTrig.md)  
+- [External trigger](blog/externalTrigger/extTrig.md)  
