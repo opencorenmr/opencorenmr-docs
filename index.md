@@ -19,7 +19,10 @@ I will be trying to add information on:
 
 # Hardware
 
-- [Mother board](hardware/motherBoard/motherBoard.md)   
+- [Mother board](hardware/motherBoard/motherBoard.md) (23 Feb 2019)  
+- [DDS2](hardware/DDS2/DDS2.md) (2 Mar 2019)  
+- [USB](hardware/USB/USB.md) (5 Mar 2019)  
+
 
 
 - - -
@@ -38,4 +41,4 @@ I will be trying to add information on:
 - [On-line and Off-line Experimental Settings](blog/onLineAndOffLineExpSettings/onLineAndOffLineExpSettings.md) (21 July 2018)  
 - [Phase Cycling](blog/phaseCycle.md)  
 - [GPIB on Linux](blog/gpibOnLinux.md)  
-- [External trigger](blog/extTrig.md)  
+- [External trigger](blog/externalTrigger/extTrig.md)  
