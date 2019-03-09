@@ -4,7 +4,7 @@
 26 Feb 2016 Original memo written by Kazuyuki Takeda
 
 
-##### In this document I show how I make rf filters used in the Opencore NMR spectrometer.
+In this document I show how I make rf filters used in the Opencore NMR spectrometer.
 
 [Back to Top](../../index.md)
 
@@ -50,6 +50,23 @@ I found that a two-turns coil, connected in parallel with 22 pF capacitor, works
 ![](2t_1.png)
 ![](2t_2.png)
 
+### Board data
+
+![](boardData.png)  
+- The board was designed on EAGLE 6.2.0 Professional  
+- There is just **1 layer**, i.e., component (top) layer.  
+
+##### EAGLE schematic and board files
+- Schematic: [filters.sch](data/filters.sch)  
+- Board: [filters.brd](data/filters.brd)  
+
+##### Gerber files
+
+
+- [filters.cmp](data/gerber/filters.cmp) (Component side pattern)
+- [filters.plc](data/gerber/filters.plc)（Component side silkscreen)
+- [filters.stc](data/gerber/filters.stc)（Component side solder resist）
+- [filters.out](data/gerber/filters.out)（outline）
 
 
 
