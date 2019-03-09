@@ -1,5 +1,6 @@
 # DDS2
 
+9 Mar 2019 Revised by Kazuyuki Takeda
 2 Mar 2019 Kazuyuki Takeda
 
 [Back to Home](../../index.md)  
@@ -81,10 +82,10 @@ CN2	| 	    | FH12-30S-0.5SH | | (HIROSE)		0.5mm pitch FPC connector
 CN3	| 	    | U.FL-R-SMT | | (HIROSE)		
 CN4	| 	    | U.FL-R-SMT | | (HIROSE)		
 CN5	| 	    | DF13-2P-1.25V | | (HIROSE)		
-FB1	| 	    | FERRITE BEAD | 1608
-FB2	| 	    | FERRITE BEAD | 1608
-FB3	| 	    | FERRITE BEAD | 1608
-FB4	| 	    | FERRITE BEAD | 1608
+FB1  |  30 Ohm @ 100 MHz   |  MPZ1608S300A   | 1608           | Ferrite bead (TDK)
+FB2  |  30 Ohm @ 100 MHz   |  MPZ1608S300A   | 1608           | Ferrite bead (TDK)
+FB3  |  30 Ohm @ 100 MHz   |  MPZ1608S300A   | 1608           | Ferrite bead (TDK)
+FB4  |  30 Ohm @ 100 MHz   |  MPZ1608S300A   | 1608           | Ferrite bead (TDK)
 U1	| 	    | AD9858 | | (Analog Divices)		DDS chip
 L1	| 12nH	| L | 1608
 R1	| 2k	  | R | 1005
