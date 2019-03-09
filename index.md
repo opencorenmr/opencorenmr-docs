@@ -23,6 +23,7 @@ I will be trying to add information on:
 - [DDS2](hardware/DDS2/DDS2.md) (2 Mar 2019)  
 - [USB](hardware/USB/USB.md) (5 Mar 2019)  
 - [Receiver](hardware/receiver/receiver.md) (9 Mar 2019)  
+- [Filters](hardware/makingFilters/makingFilters.md) (9 Mar 2019)  
 
 
 
