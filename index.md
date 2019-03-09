@@ -22,6 +22,7 @@ I will be trying to add information on:
 - [Mother board](hardware/motherBoard/motherBoard.md) (23 Feb 2019)  
 - [DDS2](hardware/DDS2/DDS2.md) (2 Mar 2019)  
 - [USB](hardware/USB/USB.md) (5 Mar 2019)  
+- [Receiver](hardware/receiver/receiver.md) (9 Mar 2019)  
 
 
 
