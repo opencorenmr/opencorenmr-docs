@@ -1,12 +1,14 @@
 # Making Filters
 
-9 Mar 2019 Revised by Kazuyuki Takeda
-26 Feb 2016 Original memo written by Kazuyuki Takeda
+- 12 Mar 2019 Minor revision by Kazuyuki Takeda  
+- 9 Mar 2019 Revised by Kazuyuki Takeda
+- 26 Feb 2016 Original memo written by Kazuyuki Takeda
 
-
-In this document I show how I make rf filters used in the Opencore NMR spectrometer.
 
 [Back to Top](../../index.md)
+
+- - -
+In this document I show how I make rf filters used in the Opencore NMR spectrometer.
 
 - - -
 

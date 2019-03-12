@@ -1,5 +1,6 @@
 # Receiver
 
+11 Mar 2019 Revised by Kazuyuki Takeda
 8 Mar 2019 document created by Kazuyuki Takeda
 
 [Back to Home](../../index.md)  
@@ -64,13 +65,13 @@ C6  | 0.1u	| Capacitor	| 1005	|
 C7  | 0.01u	| Capacitor	| 1005	|
 C8  | 0.01u	| Capacitor	| 1608	|
 C9  | 10u	  | Tantalum Capacitor | 3216 (polar)	|
-CN1 | |  SMA Straight
+CN1 | |  SMA Straight PCB Socket | | 5-1814832-1 (TE Connectivity)
 CN2 | |  U.FL-R-SMT |		| HIROSE
 CN3 | |  U.FL-R-SMT | 	| HIROSE
-CN4 | |  DF13-2P-1.25V	| 	
-CN5 | |  DF13-2P-1.25V	| 	
-CN6 | |  DF13-3P-1.25V	| 	
-CN7 | |  DF13-2P-1.25V	| 	
+CN4 | |  DF13-2P-1.25V	| 1.25mm Pitch Miniature Crimping Connector | HIROSE
+CN5 | |  DF13-2P-1.25V	| 1.25mm Pitch Miniature Crimping Connector | HIROSE		
+CN6 | |  DF13-3P-1.25V	| 1.25mm Pitch Miniature Crimping Connector | HIROSE		
+CN7 | |  DF13-2P-1.25V	| 1.25mm Pitch Miniature Crimping Connector | HIROSE		
 CN8 | |  U.FL-R-SMT |		| HIROSE
 CN9 | |  U.FL-R-SMT |		| HIROSE
 CN10|	|  U.FL-R-SMT |		| HIROSE
