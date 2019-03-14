@@ -30,6 +30,7 @@ I will be trying to add information on:
 - - -
 
 # Blog
+- [GPIB on Linux](blog/gpibOnLinux.md) (14 Mar 2019)  
 - [Qt on Linux](blog/qt-on-linux.md) (14 Mar 2019)   
 - [Frequency control](blog/dds2/dds2.md) (30 Jan 2019)  
 - [Data files](blog/dataFiles/dataFiles.md) (29 Jan 2019)  
@@ -43,5 +44,4 @@ I will be trying to add information on:
 - [LAPACK compilation](blog/lapack.md) (28 Aug 2018)  
 - [On-line and Off-line Experimental Settings](blog/onLineAndOffLineExpSettings/onLineAndOffLineExpSettings.md) (21 July 2018)  
 - [Phase Cycling](blog/phaseCycle.md)  
-- [GPIB on Linux](blog/gpibOnLinux.md)  
 - [External trigger](blog/externalTrigger/extTrig.md)  
