@@ -1,8 +1,9 @@
 ---
 
 # GPIB setup on Linux
-12 Oct 2018 Revised by Kazuyuki Takeda  
-21 May 2018 Written by Kazuyuki Takeda
+- 14 Mar 2019 Revised by Kazuyuki Takeda  
+- 12 Oct 2018 Revised by Kazuyuki Takeda  
+- 21 May 2018 Written by Kazuyuki Takeda  
 
 ## Introduction
 We want to make remote control over the power supply for our cryogen-free superconducting magnet (SMS80C, Cryogenics) on the console software of Opencore NMR 2. I have attempted to program on Windows for a while, but never succeeded, and gave up. Now I decided to program on Linux.
@@ -13,9 +14,17 @@ We want to make remote control over the power supply for our cryogen-free superc
 - Default primary address: 4
 
 ## Driver compilation (Cent OS)
+##### linux-gpib-4.1.0  
 - `linux-gpib-4.1.0` was downloaded from [http://linux-gpib.sourceforge.net](http://linux-gpib.sourceforge.net) and extracted in an arbitrary working directory.
 - `./configure`
 - `make`
+
+##### linux-gpib-4.2.0
+- If you download the latest (at the time of writing, Mar 2019) version (linux-gpib-4.2.0) and try to compile in the same way as the above example, you may get an error `implicit declaration of function ‘of_find_node_by_path’`, and the compilation may stop.  
+- A remedy is suggested [here](https://sourceforge.net/p/linux-gpib/mailman/message/36479049/).  
+- In short, you need to open `drivers/gpib/Makefile` with a text editor and comment out the line `obj-y += fmh_gpib/`  
+- Then, compilation should work.  
+
 
 ## Installation and setup
 - `sudo make install`
