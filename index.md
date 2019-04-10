@@ -31,8 +31,8 @@ I will be trying to add information on:
 - - -
 
 # Blog
-- [GPIB on Linux](blog/gpibOnLinux.md) (14 Mar 2019)  
-- [Qt on Linux](blog/qt-on-linux.md) (14 Mar 2019)   
+- [GPIB on Linux](blog/gpibOnLinux/gpibOnLinux.md) (14 Mar 2019)  
+- [Qt on Linux](blog/qt-on-linux/qt-on-linux.md) (14 Mar 2019)   
 - [Frequency control](blog/dds2/dds2.md) (30 Jan 2019)  
 - [Data files](blog/dataFiles/dataFiles.md) (29 Jan 2019)  
 - [Gate definition](blog/gateDefinition/gateDefinition.md) (29 Jan 2019)  
@@ -40,9 +40,9 @@ I will be trying to add information on:
 - [Shaped pulses](blog/shapedPulse/shapedPulse.md) (28 Jan 2019)  
 - [Probe tuning](blog/probeTune/probeTune.md) (28 Jan 2019)  
 - [Driver setup](blog/driverSetup/driverSetup.md) (11 Jan 2019)  
-- [USB setup on Linux](blog/USBSetupOnLinux.md) (15 Oct 2018)  
+- [USB setup on Linux](blog/USBSetupOnLinux/USBSetupOnLinux.md) (15 Oct 2018)  
 - [EPROM configuration on USB board](blog/usb_eprom/mprog.md) (3 Sep 2018)  
-- [LAPACK compilation](blog/lapack.md) (28 Aug 2018)  
+- [LAPACK compilation](blog/lapack/lapack.md) (28 Aug 2018)  
 - [On-line and Off-line Experimental Settings](blog/onLineAndOffLineExpSettings/onLineAndOffLineExpSettings.md) (21 July 2018)  
-- [Phase Cycling](blog/phaseCycle.md)  
+- [Phase Cycling](blog/phaseCycle/phaseCycle.md)  
 - [External trigger](blog/externalTrigger/extTrig.md)  
