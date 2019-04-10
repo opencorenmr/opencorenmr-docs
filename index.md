@@ -13,7 +13,7 @@ I will be trying to add information on:
 - - -
 
 # Software
-- [release notes](release/release.md)
+- [Download](https://github.com/opencorenmr/console-devel-2.0.1/releases/)  
 
 - - -
 
