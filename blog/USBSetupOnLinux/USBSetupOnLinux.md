@@ -1,4 +1,5 @@
 # USB setup on Linux
+Correction made on 7 May 2019 by Kazuyuki Takeda  
 Minor correction on 15 Oct 2018 by Kazuyuki Takeda  
 Updated on 12 Oct 2018 by Kazuyuki Takeda  
 Updated on 25 Aug 2018 by Kazuyuki Takeda  
@@ -23,7 +24,7 @@ Created on 26 Apr 2018 by Kazuyuki Takeda
  - Go to `/etc/udev/rules.d/`, and make a new text file with a name of, say, `opencoreNMR.rules`.
  - One easy way to do so is `sudo vi opencoreNMR.rules`. Then, write as follows:
  ```
- ACTION="add",ATTRS{idVendor}=="0403",ATTRS{idProduct}=="6010",MODE="0666",RUN+="/sbin/rmmod ftdi_sio",OPTIONS="last_rule"
+ ACTION=="add",ATTRS{idVendor}=="0403",ATTRS{idProduct}=="6010",MODE="0666",RUN+="/sbin/rmmod ftdi_sio",OPTIONS="last_rule"
  ```
  - Be sure to use `ATTRS{idVendor}` and `ATTRS{idProduct}`. Do **not** use ATTR{idVendor} and ATTR{idProduct} (note the latter does not include "S"), otherwise I found out that `RUN+=...` does not work.
  - The points are (i) mode 666 (read and write permission for all), and (ii) implementation of `rmmod ftdi_sio`.
