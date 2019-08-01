@@ -1,4 +1,5 @@
 # Phase Cycling with Opencore NMR
+1 Aug 2019 minor revision by Kazuyuki Takeda
 20 July 2018 Kazuyuki Takeda
 
  - Let me explain the difference between _phase modulation_ and _phase cycling_.
@@ -7,7 +8,7 @@
 pulse(pw; F1Amp(a), F1Phase(ph1), F1_Gate, F1_Unblank)
 ```
 
- - With this, the spectrometer emits a pulse with a width `pw`, amplitude `a`, and phase `ph1`. In addition, gate `F1\_Unblank` is activated in this example for power amplifier operation.
+ - With this, the spectrometer emits a pulse with a width `pw`, amplitude `a`, and phase `ph1`. In addition, gate `F1_Unblank` is activated in this example for power amplifier operation.
  - Gate `F1Phase` is used to _modulate_ the phase.
  - That is, phase modulation is used to change the phase of rf pulses.
  - Conversely, the idea of _phase cycing_ is to make a shift, _in addition to_ phase modulation, to the rf phase according to the current count of sequence repetition.

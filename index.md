@@ -31,6 +31,8 @@ I will be trying to add information on:
 - - -
 
 # Blog
+- [FPGA writing](blog/fpga-writing/fpga-writing.md) (1 Aug 2019)  
+- [Device driver](blog/driverSetup/driverSetup.md) (1 Aug 2019)  
 - [GPIB on Linux](blog/gpibOnLinux/gpibOnLinux.md) (14 Mar 2019)  
 - [Qt on Linux](blog/qt-on-linux/qt-on-linux.md) (14 Mar 2019)   
 - [Frequency control](blog/dds2/dds2.md) (30 Jan 2019)  
