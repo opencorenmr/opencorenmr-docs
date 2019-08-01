@@ -8,6 +8,7 @@
 - A download cable (e.g., Terasic Blaster) is connected, and  
 - The Quartus software has been launched.  
 
+![](0.png)
 
 ### Step-by-step instruction
 - Run the ***Programmer*** from within the Quartus software. This can be done either by pull-down `Tools -> Programmer`, or by clicking an ***Programmer*** icon on the toolbar.
