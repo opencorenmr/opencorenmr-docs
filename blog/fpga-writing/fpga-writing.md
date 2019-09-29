@@ -3,7 +3,7 @@
 - - -
 
 ##### We assume that
-- The compiled (and converted) core-module file, such as [`build2009c-cyclone5.jic`](https://github.com/opencorenmr/fpga-devel-2.0.1/blob/master/cyclone5/output_files/build2009c-cyclone5.jic), has already been downloaded,  
+- The compiled (and converted) core-module file, such as `build2009c-cyclone5.jic`, has already been downloaded ([download](https://github.com/opencorenmr/fpga-devel-2.0.1/blob/master/cyclone5/output_files/)),  
 - The FPGA board, ACM-206-A7 (HumanData) is powered,  
 - A download cable (e.g., Terasic Blaster) is connected, and  
 - The Quartus software has been launched.  
