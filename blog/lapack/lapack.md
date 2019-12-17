@@ -1,4 +1,5 @@
 # LAPACK
+17 Dec 2019 Note on version compatibility added by Kazuyuki Takeda
 16 Oct 2018 minor revision by Kazuyuki Takeda  
 28 Aug 2018 minor correction by Kazuyuki Takeda  
 20 Jul 2018 first version by Kazuyuki Takeda
@@ -11,6 +12,7 @@ For Mac, we do not have to do anything as Xcode includes it, whereas for Windows
 ## Linux
  - Make sure gfortran is installed in your system.  
  - First, we need to download the source from [http://www.netlib.org/lapack/](http://www.netlib.org/lapack/). Then, we compile and copy the library files as follows.
+ - ***IMPORTANT: I found that lapack-3.9.0 causes error (template with C linkage error) during compilation of the Opencore NMR software. At this moment (17 Dec 2019) I suggest to compile lapack-3.8.0.***
  - `cp make.inc.example make.inc`
  - `make blaslib cblaslib lapacklib tmglib lapackelib`
  - `sudo cp librefblas.a /usr/local/lib/libblas.a`
