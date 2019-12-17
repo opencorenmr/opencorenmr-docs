@@ -1,5 +1,5 @@
 # LAPACK
-17 Dec 2019 Note on version compatibility added by Kazuyuki Takeda
+17 Dec 2019 Note on version compatibility added by Kazuyuki Takeda  
 16 Oct 2018 minor revision by Kazuyuki Takeda  
 28 Aug 2018 minor correction by Kazuyuki Takeda  
 20 Jul 2018 first version by Kazuyuki Takeda
