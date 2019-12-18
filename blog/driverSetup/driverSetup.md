@@ -19,7 +19,7 @@ Download a [D2XX driver](https://www.ftdichip.com/Drivers/D2XX.htm) from FTDI, e
 - Create a symbolic link:
 `sudo ln -sf /usr/local/lib/libftd2xx.so.1.4.8 /usr/local/lib/libftd2xx.so`
 
-To enable plug and play feature, follow what is written in [USB Setup on Linux](../USBSetupOnLinux.md).
+To enable plug and play feature, follow what is written in [USB Setup on Linux](../USBSetupOnLinux/USBSetupOnLinux.md).
 
 #### Mac
 Download a [D2XX driver](https://www.ftdichip.com/Drivers/D2XX.htm) from FTDI, extract the downloaded file, and follow the instruction written in ReadMe.rtf. That is, open a Terminal, and:
