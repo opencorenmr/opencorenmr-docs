@@ -31,6 +31,7 @@ I will be trying to add information on:
 - - -
 
 # Blog
+- [Qt startup error on Linux](blog/Qt-startup-error/Qt-startup-error.md) (26 Dec 2019)  
 - [FPGA writing](blog/fpga-writing/fpga-writing.md) (1 Aug 2019)  
 - [Device driver](blog/driverSetup/driverSetup.md) (1 Aug 2019)  
 - [GPIB on Linux](blog/gpibOnLinux/gpibOnLinux.md) (14 Mar 2019)  
