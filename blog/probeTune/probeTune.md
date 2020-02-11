@@ -1,7 +1,7 @@
 {% include head.html %}
 # Probe tuning using an Opencore NMR spectrometer
 
-28 Jan Kazuyuki Takeda
+28 Jan 2019 Kazuyuki Takeda
 - - -
 ## Related Topics
 - [Frequency control](../dds2/dds2.md)  
