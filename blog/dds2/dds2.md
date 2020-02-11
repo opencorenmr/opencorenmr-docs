@@ -9,7 +9,7 @@
 
 
 ## Introduction  
-AD9858, a DDS chip (Analog Devices), is driven by a clock with a frequency of either 1 GHz or 2 GHz. Note that even with the latter option (2 GHz clock), the clock frequency is divided into two inside the chip, and the DDS core operates at a clock frequency of 1 GHz. Even though the functionality is identical whichever option you choose, we need to let the AD9858 chip know which you have actually chosen. In addition, there are various options, some of which we have to set in advance to implementation of pulse sequences. And of course, we need to send commands requesting the chip to generate a signal with a specified frequency. Furthermore, you may want switch or sweep the frequency. In this section we take a look at how to do such settings.
+AD9858, a DDS chip (Analog Devices), is driven by a clock with a frequency of either 1 GHz or 2 GHz. Note that even with the latter option (2 GHz clock), the clock frequency is divided into two inside the chip, and the DDS core operates at a clock frequency of 1 GHz. Even though the functionality is identical whichever option you choose, we need to let the AD9858 chip know which you have actually chosen. In addition, there are various options, some of which we have to set in advance to implementation of pulse sequences. And of course, we need to send commands requesting the chip to generate a signal with a specified frequency. Furthermore, you may want to switch or sweep the frequency. In this section we take a look at how to do such settings.
 
 
 ## AD9858 register map  
@@ -147,7 +147,7 @@ In Opencore NMR2, the frequency sweeping can be implemented with `sweep` and `en
 sweep(F1Freq(fCenter-fSpan/2,fCenter+fSpan/2))
   pulse(50n; ST, RG)
   pulse(dw*al; F1Amp(a), pl, F1_Gate, F1_Unblank, RG)  
-  // any other commands, including piulse as well as loop, can be inserted.
+  // any other commands, including pulse as well as loop, can be inserted.
 endSweep(F1Freq)
 ```
 
