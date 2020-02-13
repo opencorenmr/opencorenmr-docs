@@ -1,6 +1,6 @@
 # Frequency control on AD9858
 
-13 Feb 2020 Revised by Kazuyuki Takeda
+13 Feb 2020 Revised by Kazuyuki Takeda  
 30 Jan 2019 Kazuyuki Takeda
 
 - - -
