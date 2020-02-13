@@ -1,5 +1,6 @@
 # Frequency control on AD9858
 
+13 Feb 2020 Revised by Kazuyuki Takeda
 30 Jan 2019 Kazuyuki Takeda
 
 - - -
@@ -227,10 +228,10 @@ FUD | WR  | ADD5  | ADD4  | ADD3   | ADD2  | ADD1  | ADD0  | D7  | D6  | D5  | D
 
 FUD | WR  | ADD5  | ADD4  | ADD3   | ADD2  | ADD1  | ADD0  | D7  | D6  | D5  | D4  | D3  | D2  | D1  | D0
 :-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:
-0  | 1  | 0  | 0  | 1  | 0  | 0  | 1  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  
+0  | 1  | 0  | 0  | 1  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  
 
 
-The resultant binary numbers are 0100100001111101 and 0100100110000000, corresponding to 18557 and 18688, respectively, leading to pulse commands
+The resultant binary numbers are 0100100001111101 and 0100100100000000, corresponding to 18557 and 18688, respectively, leading to pulse commands
 
 ```
 pulse(1u; F1Freq(setup; 18557))
