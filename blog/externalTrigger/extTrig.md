@@ -1,5 +1,6 @@
 # Waiting for external trigger
 
+12 May 2019 Typo error corrected by KT (exttrig)  
 8 Mar 2019 Revised by Kazuyuki Takeda  
 
 - - -
