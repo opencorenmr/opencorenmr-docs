@@ -1,6 +1,6 @@
 # Waiting for external trigger
 
-12 May 2019 Typo error corrected by KT (exttrig)  
+12 May 2020 Typo error corrected by KT (exttrig)  
 8 Mar 2019 Revised by Kazuyuki Takeda  
 
 - - -
@@ -15,8 +15,12 @@ Init
 Relax
 ```
 
-Trigegr signal is to be fed to CN19 of the mother board.
+Trigger signal is to be fed to CN19 of the mother board.
 
 ![cn19.png](cn19.png)
+
+
+
+
 
 [Back](../../index.md)
