@@ -40,9 +40,9 @@ Relax
 
 Though it seems there is a delay between the trigger and the pulse, if one zooms into the trigger in the second figure there is actually almost no delay between reaching the +1.25 V trigger level and firing the pulse.
 
-![trigger.png](trigger.png)
+![trigger.BMP](trigger.BMP)
 
-![trigger_magnify.png](trigger_magnify.png)
+![trigger_magnify.BMP](trigger_magnify.BMP)
 
 As can be seen in the second figure, the rf pulse immediately fires upon the trigger reaching the +1.25 V level, and from the timescale, seems to indicate that the rf pulse will fire faster than at least 50 ns after the trigger level is reached.
 
