@@ -29,7 +29,7 @@ It is designed to trigger with LVTTL pulse, but experimentally has been found to
 
 - - -
 
-The following is an example trigger event. A (quite irregular) square pulse is used to trigger a 15 us 40 MHz rf pulse from CH1. The code used is:
+The following is an example trigger event. A (quite irregular) square pulse of +1.5 V amplitude is used to trigger a 15 us 40 MHz rf pulse from CH1. The code used is:
 
 ```
 Init
