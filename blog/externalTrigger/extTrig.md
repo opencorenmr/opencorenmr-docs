@@ -21,7 +21,7 @@ Trigger signal is to be fed to CN19 of the mother board.
 
 ![cn19.png](cn19.png)
 
-The following is how one may connect a source of trigger pulse to the pin:
+The following is how one may connect a source of trigger pulse to the pin (note the proper orientation of wires on the CN19 pin!):
 
 ![trigger_circuit.png](trigger_circuit.png)
 
@@ -44,7 +44,7 @@ Though it seems there is a delay between the trigger and the pulse, if one zooms
 
 ![trigger_magnify.BMP](trigger_magnify.BMP)
 
-As can be seen in the second figure, the rf pulse immediately fires upon the trigger reaching the +1.25 V level, and from the timescale, seems to indicate that the rf pulse will fire faster than at least 50 ns after the trigger level is reached.
+As can be seen in the second figure, the rf pulse immediately fires upon the trigger reaching the +1.25 V level, and from the timescale, seems to indicate that the rf pulse will fire faster than at least 50 ns after the trigger level (+1.25 V) is reached.
 
 
 
