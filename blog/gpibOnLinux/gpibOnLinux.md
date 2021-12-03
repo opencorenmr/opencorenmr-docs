@@ -1,6 +1,7 @@
 ---
 
 # GPIB setup on Linux
+- 3 Dec 2021 Revised by Kazuyuki Takeda  
 - 14 Mar 2019 Revised by Kazuyuki Takeda  
 - 12 Oct 2018 Revised by Kazuyuki Takeda  
 - 21 May 2018 Written by Kazuyuki Takeda  
@@ -38,7 +39,7 @@ interface {
         board_type = "ni_usb_b" /* type of interface board being used */
         name = "current"        /* optional name, allows you to get a board descriptor using ibfind() */
         pad = 0 /* primary address of interface             */
-        sad = 0 /* secondary address of interface           */
+        sad = 4 /* secondary address of interface           */
         timeout = T10s  /* timeout for commands */
         eos = 0xda      /* EOS Byte, 0xa is newline and 0xd is carriage return */
         set-reos = yes  /* Terminate read if EOS */
@@ -50,7 +51,7 @@ interface {
 ```
 
 - name = `current` should be arbitrary (optionally used for `ibfind` function).
-- Surprisingly, `pad=0` was necessary, even though the dip-switched primary address on the current controller was 4. And in the program coding, it was necessary to set pad to be 4. My guess is: the primary address **to be set on the operating system** is relevant to the GPIB-USB adapter (in our case, we are using a single adapter, so that the address is the youngest, i.e., zero), whereas on the software we are supposed to connect **to the device** (in our case, the magnet power supply whose address is set on the dip switch on the pear panel to be 4).
+- `pad=0` and `sad=4` were necessary, with the dip-switched primary address on the current controller being 4. And in the program coding, it was necessary to set pad to be 4. My guess is: the primary address **to be set on the operating system** is relevant to the GPIB-USB adapter (in our case, we are using a single adapter, so that the address is the youngest, i.e., zero), whereas on the software we are supposed to connect **to the device** (in our case, the magnet power supply whose address is set on the dip switch on the pear panel to be 4).
 - After saving the `gpib.conf` file, I ran `sudo gpib_config`, which makes setup according to the above `gpib.conf` file.
 - Found in `linux-gpib-4.1.0/lib/gpib_config`.
 
