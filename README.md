@@ -1,3 +1,10 @@
+## Licensing Terms
+
+- content under `./hardware` is licensed under `CERN-OHL-W-2.0` (see [LICENSE-for-hardware](https://github.com/moedn/opencorenmr-docs/blob/master/LICENSE-for-hardware))
+- everything else is licensed under `MIT` (see [LICENSE](LICENSE))
+
+---
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/opencorenmr/opencorenmr.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
