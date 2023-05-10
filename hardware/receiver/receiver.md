@@ -30,7 +30,6 @@ Note that the right bottom part of the board serves for an optional receiver-cha
 - [rcvr003.sol](data/gerber/rcvr003.sol)（Solder side pattern）
 - [rcvr003.stc](data/gerber/rcvr003.stc)（Component side solder resist）
 - [rcvr003.sts](data/gerber/rcvr003.sts)（Solder side solder resist）
-- [rcvr003.pls](data/gerber/rcvr003.pls)（Solder side silkscreen）
 - [rcvr003.2l](data/gerber/rcvr003.2l)（2nd (inner) layer pattern）
 - [rcvr003.3l](data/gerber/rcvr003.3l)（3rd (inner) layer pattern）
 - [rcvr003.out](data/gerber/rcvr003.out)（outline）
