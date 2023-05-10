@@ -18,7 +18,7 @@ This board serves for a direct digital synthesizer (DDS). Each rf channel of the
 
 ##### EAGLE schematic and board files
 - Schematic: [DDS2-03.sch](data/DDS2-03.sch)  
-- Board: [DDS2-03.brd](data/DDS22-03.brd)  
+- Board: [DDS2-03.brd](data/DDS2-03.brd)  
 
 ##### Gerber files
 - [DDS2-03.cmp](data/gerber/DDS2-03.cmp)  (Component side pattern)
