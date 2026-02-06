@@ -31,6 +31,7 @@ I will be trying to add information on:
 - - -
 
 # Blog
+- [New features of pulse programming language](blog/ppg-new2026feb/ppg-new2026feb.md) (6 Feb 2026)
 - [Qt startup error on Linux](blog/Qt-startup-error/Qt-startup-error.md) (26 Dec 2019)  
 - [FPGA writing](blog/fpga-writing/fpga-writing.md) (1 Aug 2019)  
 - [Device driver](blog/driverSetup/driverSetup.md) (1 Aug 2019)  
